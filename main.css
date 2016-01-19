@@ -4,38 +4,41 @@
   padding: 0;
 }
 
-html,
-body {
-	font-family: serif;
+html {
+	font-family: "lato", sans-serif;
+	font-size: 16px;
 }
 
 button,a{
 	cursor: pointer;
 }
 .main{
+	height: auto;
 	margin: 0 auto;
 	max-width: 600px;
+	padding-bottom: 70px;
+	position: relative;
 	width: 95%;
 }
 
 .title{
-	font-family: 'Pacifico', cursive;
-	font-size: 2rem;
-	letter-spacing: 3px;
-	margin-bottom: 1rem;
+	font-family: 'Satisfy', cursive;
+	font-size: 1.8rem;
+	margin-bottom: .5rem;
 	text-align: center;
 }
 
 .intro{
-	font-size: 1.1rem;
-	margin-bottom: 1.5rem;
+	font-size: .9rem;
+	margin-bottom: 1em;
+	text-align: center;
 }
 
 .new-quote{
 	background-color: #49BA7C;
 	background-color: rgba(160,200,160,.8);
 	border-radius: .6em;
-	box-shadow: -5px 5px  15px rgba(0,0,0, .5);
+	box-shadow: -3px 3px  10px rgba(0,0,0, .5);
 	display: block;
 	font-family: "Satisfy", cursive;
 	font-size: 1rem;
@@ -45,23 +48,20 @@ button,a{
 .quote{
 	background-color: #fefefe;
 	border-radius: .6rem;
-	box-shadow: -5px 5px  15px rgba(0,0,0, .5);
-	font-size: 1.5rem;
-	padding: 1rem;
-	margin-top: 1.5rem;
-	text-align: center;
-	-webkit-transition: 3s;
-	-o-transition: 3s;
-	transition: 3s;
-	
+	box-shadow: -3px 3px  10px rgba(0,0,0, .5);
+	font-size: 1.2rem;
+	padding: .5rem;
+	margin-top: 1rem;
 }
 
 .quote-content{
-	margin-bottom: 1rem;
+	margin-bottom: .8rem;
+	text-align: left;
 }
 
 .author{
 	font-style: italic;
+	text-align: right;
 	
 }
 
@@ -87,8 +87,18 @@ button,a{
 }
 
 .origin{
-	bottom: 2rem;
-	left: 10%;
+	bottom: 1rem;
+	left: 1rem;
 	position: absolute;
 
+}
+
+@media (min-width: 750px){
+	html {
+		font-size: 20px;
+	}
+
+	.title {
+		font-size: 3rem;
+	}
 }
